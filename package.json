@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:ft": "TEST_ENV=ft playwright test",
+    "test:e2e:st": "TEST_ENV=st playwright test",
+    "test:e2e:ft:ui": "TEST_ENV=ft playwright test --ui",
+    "test:e2e:report:ft": "playwright show-report playwright-report/ft",
+    "test:e2e:report:st": "playwright show-report playwright-report/st"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^24.0.0"
+  }
+}
